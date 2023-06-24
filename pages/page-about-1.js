@@ -1,35 +1,32 @@
 import Link from "next/link";
 import { useState } from "react";
-import CounterUp from "../components/elements/CounterUp";
 import Layout from "../components/layout/Layout";
-import TeamSlider from "../components/slider/Team";
-import TestimonialSlider from "../components/slider/Testimonial";
 
-function About1() {
+function About() {
     // Open modal
     const [modal, setModal] = useState(false);
     const [videoLoading, setVideoLoading] = useState(true);
     const openModal = () => {
-    setModal(!modal);
+        setModal(!modal);
     };
     const spinner = () => {
-    setVideoLoading(!videoLoading);
+        setVideoLoading(!videoLoading);
     };
     return (
         <>
             <Layout headerStyle={"header-style-5"}>
-            <section className="section-box">
-                        <div className="banner-hero banner-faqs-1">
-                            <div className="container">
-                                <div className="row">
-                                    <div className="col-lg-12 text-center">
-                                        <h1 className="text-display-3 color-white mb-30">Education Is Architecture Of The Soul</h1>
-                                    </div>
+                <section className="section-box">
+                    <div className="banner-hero banner-faqs-1">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-12 text-center">
+                                    <h1 className="text-display-3 color-white mb-30">Education Is Architecture Of The Soul</h1>
                                 </div>
                             </div>
                         </div>
-                    </section>
-               {/*  <section className="section-box">
+                    </div>
+                </section>
+                {/*  <section className="section-box">
                     <div className="banner-hero banner-2 bg-about-1">
                         <div className="container">
                             <div className="row">
@@ -53,7 +50,7 @@ function About1() {
                         </div>
                     </div>
                 </section> */}
-               {/*  <div className="section-box mt-100">
+                {/*  <div className="section-box mt-100">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-1" />
@@ -86,7 +83,7 @@ function About1() {
                             <div className="col-lg-10 col-sm-10 col-12 text-center">
                                 <div className="text-center mb-20"><span className="tag-1">What We Do, What You Get</span></div>
                                 <h2 className="text-display-3 color-gray-900 mb-60">Our Story</h2>
-                                        <p className="text-heading-5 color-gray-600 mt-40">Our mission is to foster a stimulating learning environment that promotes academic excellence, personal growth, and the development of well-rounded individuals. We aim to empower our students with the knowledge, critical thinking abilities, and practical skills that will enable them to contribute meaningfully to society.</p>
+                                <p className="text-heading-5 color-gray-600 mt-40">Our mission is to foster a stimulating learning environment that promotes academic excellence, personal growth, and the development of well-rounded individuals. We aim to empower our students with the knowledge, critical thinking abilities, and practical skills that will enable them to contribute meaningfully to society.</p>
                             </div>
                             <div className="col-lg-1 col-sm-1 col-12" />
                         </div>
@@ -95,23 +92,23 @@ function About1() {
                         <div className="row">
                             <div className="col-lg-1" />
                             <div className="col-lg-12 ">
-                                    <div className="box-quote row">
-                                            <div className="text-quote col-lg-6">Blandit consequat feugiat sed dapibus lorem diam nibh venenatis sodales pulvinar augue adipiscing turpis nulla sit tincidunt non lacus sit amet et white dreamy dramatically place.
-                                                <div className="box-user">
-                                                    <div className="img-user"><img src="/assets/imgs/page/blog/single/user-4.png" alt="Agon" /></div><span className="text-heading-5 color-white">Ronald Richards</span>
-                                                </div>
-                                            </div>
-                                            <div className="card-grid-style-4 col-lg-5 pl-50">
-                                                    <div className="grid-4-img mb-20">
-                                                    <Link href="/blog-single" legacyBehavior><a><img src="/assets/president.jpg" alt="Agon" />
-                                                    </a></Link>
-                                                </div></div>
-                                            </div>
+                                <div className="box-quote row">
+                                    <div className="text-quote col-lg-6">Blandit consequat feugiat sed dapibus lorem diam nibh venenatis sodales pulvinar augue adipiscing turpis nulla sit tincidunt non lacus sit amet et white dreamy dramatically place.
+                                        <div className="box-user">
+                                            <div className="img-user"><img src="/assets/imgs/page/blog/single/user-4.png" alt="Agon" /></div><span className="text-heading-5 color-white">Ronald Richards</span>
+                                        </div>
+                                    </div>
+                                    <div className="card-grid-style-4 col-lg-5 pl-50">
+                                        <div className="grid-4-img mb-20">
+                                            <Link href="/blog-single" legacyBehavior><a><img src="/assets/president.jpg" alt="Agon" />
+                                            </a></Link>
+                                        </div></div>
+                                </div>
                                 {/* <div className="box-image">
                                     <a className="popup-youtube btn-play-video btn-play-middle" onClick={openModal}></a>
                                     <img className="img-responsive bdrd-16" src="assets/imgs/page/about/1/img-1.png" alt="Agon" /></div>
                                 */}
-                             </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -155,7 +152,7 @@ function About1() {
                         </div>
                     </div>
                 </section> */}
-               {/*  <section className="section-box mt-100">
+                {/*  <section className="section-box mt-100">
                     <div className="container">
                         <div className="text-center mb-20"><span className="tag-1 bg-6 color-green-900">What We Do, What You Get</span></div>
                         <div className="row">
@@ -282,7 +279,7 @@ function About1() {
                         </div>
                     </div>
                 </section> */}
-                  <section className="section-box">
+                <section className="section-box">
                     <div className="banner-hero bg-about-3">
                         <div className="container">
                             <div className="row">
@@ -298,27 +295,27 @@ function About1() {
                 {modal ? (
                     <section className="modal__bg" onClick={openModal}>
                         <div className="modal__align">
-                        <div className="modal__content" modal={modal}>
-                            <div className="modal__video-align">
-                            {videoLoading ? (
-                                <div className="modal__spinner">
-                                    <i className="fi-rr-refresh"></i>
+                            <div className="modal__content" modal={modal}>
+                                <div className="modal__video-align">
+                                    {videoLoading ? (
+                                        <div className="modal__spinner">
+                                            <i className="fi-rr-refresh"></i>
+                                        </div>
+                                    ) : null}
+                                    <iframe
+                                        className="modal__video-style"
+                                        onLoad={spinner}
+                                        loading="lazy"
+                                        width="800"
+                                        height="500"
+                                        src="https://www.youtube.com/embed/oRI37cOPBQQ"
+                                        title="YouTube video player"
+                                        frameBorder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen
+                                    ></iframe>
                                 </div>
-                            ) : null}
-                            <iframe
-                                className="modal__video-style"
-                                onLoad={spinner}
-                                loading="lazy"
-                                width="800"
-                                height="500"
-                                src="https://www.youtube.com/embed/oRI37cOPBQQ"
-                                title="YouTube video player"
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen
-                            ></iframe>
                             </div>
-                        </div>
                         </div>
                     </section>
                 ) : null}
@@ -328,4 +325,4 @@ function About1() {
     )
 }
 
-export default About1;
+export default About;
