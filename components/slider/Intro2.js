@@ -5,7 +5,6 @@ import Link from "next/link";
 import React from "react";
 import SwiperCore, { Autoplay, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import data from "../../util/shopData";
 SwiperCore.use([Autoplay, Navigation]);
 const Intro2 = () => {
     return (

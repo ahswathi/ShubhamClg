@@ -4,8 +4,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import ThumbSlider from "../../components/slider/Thumb";
-import data from "../../util/shopData";
+import ThumbSlider from "../../components/slider/Thumb"
 import Layout from "./../../components/layout/Layout";
 const SingleVendor = () => {
 

@@ -20,7 +20,7 @@ const Header = ({ handleOpen, headerStyle }) => {
                             <div className="header-logo">
                                 <Link href="/" legacyBehavior>
                                     <a className="d-flex">
-                                        {headerStyle ? <img alt="Agon" src="/assets/imgs/template/logo-white.svg" /> : <h5>Shubham</h5> /* <img alt="Agon" src="/assets/imgs/template/logo.svg" /> */}
+                                        {headerStyle ? <h5 className="text-white">Shubham</h5> /* <img alt="Agon" src="/assets/imgs/template/logo-white.svg" /> */ : <h5>Shubham</h5> /* <img alt="Agon" src="/assets/imgs/template/logo.svg" /> */}
                                     </a>
                                 </Link>
                             </div>

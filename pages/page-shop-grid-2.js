@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import Layout from "../components/layout/Layout";
-import data from "../util/shopData";
 import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
 
