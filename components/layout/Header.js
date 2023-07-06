@@ -154,14 +154,14 @@ const Header = ({ handleOpen, headerStyle }) => {
                                         </li> */}
                                     </ul>
                                 </nav>
-                                <div className="burger-icon burger-icon-white" onClick={handleOpen}>
+                                <div className="burger-icon burger-icon-white d-xl-none d-l-none" onClick={handleOpen}>
                                     <span className="burger-icon-top" /><span className="burger-icon-mid" /><span className="burger-icon-bottom" />
                                 </div>
                             </div>
                         </div>
                         <div className="header-right">
                             <div className="block-signin">
-                                <Link href="/page-signup" legacyBehavior><a className="btn btn-default hover-up icon-arrow-right">Enquire now</a></Link>
+                                <Link href="/page-contact" legacyBehavior><a className="btn btn-default btn-l-black  hover-up icon-arrow-right d-xl-block">Enquire now</a></Link>
                             </div>
                         </div>
                     </div>

@@ -23,7 +23,7 @@ const Layout = ({ children, headerStyle }) => {
             <div  className={openClass && "body-overlay-1"} onClick={handleRemove} />
 
             <Header handleOpen={handleOpen} headerStyle={headerStyle} />
-            <Sidebar openClass={openClass} />
+            <Sidebar openClass={openClass} className='d-xl-none'/>
             <main className="main">
                 {children}
             </main>

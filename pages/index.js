@@ -672,10 +672,10 @@ function Home() {
                                                 By clicking the button, you are
                                                 agreeing with our
                                             </p> */}
-                                            <div className="box-form-newsletter mt-30">
-                                                <form className="form-newsletter">
-                                                    <input className="input-newsletter"  placeholder="Enter you mail .." /><button className="btn btn-send" />
-                                                </form>
+                                            <div className="">
+                                            <div className="mt-40">
+                                                    <Link href="/page-contact" legacyBehavior><button className="btn btn-black icon-arrow-right-white mr-40 mb-20" type="submit">Contact us</button></Link>
+                                                </div>
                                             </div>
                                         </div>
                                         <div className="col-lg-6 col-md-5 mt-30 mt-lg-0 mt-md-30 mt-sm-30 position-relative text-end">
